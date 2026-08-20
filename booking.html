@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Ride | SAWARI</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+<header class="navbar">
+
+<a href="sawari-logo.png" class="logo">
+
+<div class="logo-icon">
+<i class="fa-solid fa-route"></i>
+</div>
+
+<div>
+<h2>SAWARI</h2>
+<span>Har Safar, Aasaan.</span>
+</div>
+
+</a>
+
+
+<nav>
+
+<a href="index.html">Home</a>
+<a class="active" href="booking.html">Book Ride</a>
+<a href="how-it-works.html">How It Works</a>
+<a href="drivers.html">Drivers</a>
+<a href="users.html">Users</a>
+<a href="about.html">About</a>
+<a href="revenue.html">Business</a>
+
+</nav>
+
+<a href="booking.html" class="nav-btn">
+Book a Ride
+</a>
+
+</header>
+
+
+<section class="page-header">
+
+<span>SAWARI BOOKING</span>
+
+<h1>Where Do You Want To Go?</h1>
+
+<p>
+Enter your pickup and destination to find a nearby driver.
+</p>
+
+</section>
+
+
+<section class="booking-page">
+
+<div class="booking-form">
+
+<h2>
+<i class="fa-solid fa-route"></i>
+Book Your Ride
+</h2>
+
+
+<label>Pickup Location</label>
+
+<div class="input-wrapper">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<input
+id="pickup"
+type="text"
+placeholder="Enter pickup location">
+
+</div>
+
+
+<label>Destination</label>
+
+<div class="input-wrapper">
+
+<i class="fa-solid fa-flag-checkered"></i>
+
+<input
+id="destination"
+type="text"
+placeholder="Enter destination">
+
+</div>
+
+
+<label>Select Vehicle</label>
+
+<div class="vehicle-options">
+
+<div class="vehicle active"
+onclick="selectVehicle(this,'Toto')">
+
+<span>🛺</span>
+
+<strong>Toto</strong>
+
+<small>₹30+</small>
+
+</div>
+
+
+<div class="vehicle"
+onclick="selectVehicle(this,'Auto')">
+
+<span>🛺</span>
+
+<strong>Auto</strong>
+
+<small>₹40+</small>
+
+</div>
+
+</div>
+
+
+<button
+class="search-btn"
+onclick="requestRide()">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+Find A Ride
+
+</button>
+
+
+<div id="bookingResult"></div>
+
+</div>
+
+
+<div class="booking-side">
+
+<div class="booking-icon">
+🛺
+</div>
+
+<h2>
+Your Local Ride,
+Just A Click Away.
+</h2>
+
+<p>
+SAWARI makes local transportation
+simple and accessible for students
+and residents.
+</p>
+
+
+<div class="benefit">
+
+<i class="fa-solid fa-location-crosshairs"></i>
+
+<div>
+<strong>Nearby Drivers</strong>
+<span>Find local Toto & Auto drivers.</span>
+</div>
+
+</div>
+
+
+<div class="benefit">
+
+<i class="fa-solid fa-bolt"></i>
+
+<div>
+<strong>Quick Booking</strong>
+<span>Simple digital ride request.</span>
+</div>
+
+</div>
+
+
+<div class="benefit">
+
+<i class="fa-solid fa-wallet"></i>
+
+<div>
+<strong>Affordable</strong>
+<span>Pricing tuned to local travel.</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="footer-bottom">
+
+<span>© 2026 SAWARI</span>
+<span>Team Enigma</span>
+
+</div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
